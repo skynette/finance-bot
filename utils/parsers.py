@@ -4,7 +4,7 @@ from api.schemas import FinancialRecord
 def parse_income_command(args: list) -> FinancialRecord:
     try:
         if len(args) < 2:
-            raise ValueError("Format: /add_income [amount] [currency] [category]")
+            raise ValueError("Format: `/add_income [amount] [currency] [category]`")
             
         return FinancialRecord(
             amount=float(args[0]),
@@ -18,7 +18,7 @@ def parse_income_command(args: list) -> FinancialRecord:
 def parse_expense_command(args: list) -> FinancialRecord:
     try:
         if len(args) < 2:
-            raise ValueError("Format: /add_expense [amount] [currency] [category]")
+            raise ValueError("Format: `/add_expense [amount] [currency] [category]`")
             
         return FinancialRecord(
             amount=float(args[0]),

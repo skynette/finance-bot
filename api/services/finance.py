@@ -6,7 +6,6 @@ from typing import Optional
 class FinanceService:
     @staticmethod
     async def create_income(record_data: dict, user_id: int) -> CommandResponse:
-        print("Creating income record")
         try:
             async with transaction.atomic():
                 currency = await Currency.objects.aget(code=record_data["currency_code"])
@@ -48,7 +47,6 @@ class FinanceService:
 
     @staticmethod
     async def create_expense(record_data: dict, user_id: int) -> CommandResponse:
-        print("Creating expense record")
         try:
             async with transaction.atomic():
                 currency = await Currency.objects.aget(code=record_data["currency_code"])

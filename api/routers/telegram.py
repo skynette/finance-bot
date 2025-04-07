@@ -7,13 +7,12 @@ telegram_service = TelegramService()
 
 @router.post("/telegram-webhook")
 async def handle_webhook(request: Request):
-    print("Received webhook request")
     try:
         update_data = await request.json()
         result = await telegram_service.process_update(update_data)
         
         if not result.chat_id:
-            return {"status": "ok"}  # No chat to reply to
+            return {"status": "ok"}
         
         # Handle different command types
         if result.status == "income_command":
@@ -38,15 +37,15 @@ async def handle_webhook(request: Request):
             help_text = """
                         📚 *Available Commands*:
 
-                        */add_income* [amount] [currency] [category]
-                        Example: `/add_income 100 USD Salary`
-                        Record a new income transaction
+*/add_income* [amount] [currency] [category]
+Example: `/add_income 100 USD Salary`
+Record a new income transaction
 
-                        */add_expense* [amount] [currency] [category]  
-                        Example: `/add_expense 50 EUR Groceries`
-                        Record a new expense
+*/add_expense* [amount] [currency] [category]  
+Example: `/add_expense 50 EUR Groceries`
+Record a new expense
 
-                        */help* - Show this help message
+*/help* - Show this help message
                     """
             await telegram_service._send_message(
                 result.chat_id,
