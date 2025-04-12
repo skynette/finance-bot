@@ -1,77 +1,87 @@
-from fastapi import APIRouter, Request, HTTPException
-from api.services import TelegramService, FinanceService
-import json
+import os
+from fastapi import APIRouter, Request
+from api.schemas import TelegramUpdate
+from api.services.telegram import TelegramService
+from api.services.finance import FinanceService
+from django.contrib.auth import get_user_model
+from dotenv import load_dotenv
+
+load_dotenv()
+User = get_user_model()
 
 router = APIRouter()
-telegram_service = TelegramService()
+token = os.environ.get("TELEGRAM_BOT_TOKEN")
+telegram_service = TelegramService(token=token)
 
-@router.post("/telegram-webhook")
-async def handle_webhook(request: Request):
-    try:
-        update_data = await request.json()
-        result = await telegram_service.process_update(update_data)
+help_text = (
+"""*FinanceBot Help:*\n
+Use the following commands:
+`/add_income [amount] [category] [description]` - Log an income
+`/add_expense [amount] [category] [description]` - Log an expense
+`/help` - Show this message again"""
+)
+    
+@router.post("/webhook")
+async def telegram_webhook(request: Request):
+    update_data = await request.json()
+    update = TelegramUpdate(**update_data)
+    result = await telegram_service.process_update(update)
+    print("✅ result from telegram service process update function", result)
+    
+    if result.status == "start_command":
+        await telegram_service._send_message(
+            result.chat_id,
+            "Welcome to FinanceBot! Use /help to see available commands."
+        )
+        return {"status": "start_command handled"}
+    
+    if result.status == "error":
+        await telegram_service._send_message(result.chat_id, help_text)
+        return {"status": "error_handled"}
+    
+    elif result.status == "help_command":
+        await telegram_service._send_message(result.chat_id, help_text)
+        return {"status": "help_command handled"}
+
+    elif result.status == "add_income_command":
+        response = await FinanceService.handle_add_income_command(result.details['args'], update.message.from_user.id)
+        if response.status == "error":
+            await telegram_service._send_message(
+                result.chat_id,
+                response.details.get("message", "Something went wrong.")
+            )
+        elif response.status == "success":
+            await telegram_service._send_message(
+                result.chat_id,
+                response.details.get("message", "Success do not worry.")
+            )
         
-        if not result.chat_id:
-            return {"status": "ok"}
+        print("else case response", response)
+        return {"status": "add_income_command handled"}
+
+    elif result.status == "add_expense_command":
+        response = await FinanceService.handle_add_expense_command(
+            result.details['args'],
+            update.message.from_user.id
+        )
         
-        # Handle different command types
-        if result.status == "income_command":
-            finance_result = await FinanceService.create_income(
-                result.details["record"],
-                1
-            )
+        if response.status == "error":
+            print("❌Error response", response)
             await telegram_service._send_message(
                 result.chat_id,
-                f"✅ Income recorded: {finance_result.details['amount']} {finance_result.details['currency']}"
+                response.details.get("message", "Something went wrong.")
             )
-        elif result.status == "expense_command":
-            finance_result = await FinanceService.create_expense(
-                result.details["record"],
-                1
-            )
-            await telegram_service._send_message(
-                result.chat_id,
-                f"✅ Expense recorded: {finance_result.details['amount']} {finance_result.details['currency']}"
-            )
-        elif result.status == "help_command":
-            help_text = """
-                        📚 *Available Commands*:
-
-*/add_income* [amount] [currency] [category]
-Example: `/add_income 100 USD Salary`
-Record a new income transaction
-
-*/add_expense* [amount] [currency] [category]  
-Example: `/add_expense 50 EUR Groceries`
-Record a new expense
-
-*/help* - Show this help message
-                    """
-            await telegram_service._send_message(
-                result.chat_id,
-                help_text
-            )
-        elif result.status == "unrecognized_command":
-            await telegram_service._send_message(
-                result.chat_id,
-                "❌ Unrecognized command. Send /help to see available commands."
-            )
-        elif result.status == "message_received":
-            await telegram_service._send_message(
-                result.chat_id,
-                "ℹ️ Send /help to see available commands."
-            )
-        elif result.status == "error":
-            await telegram_service._send_message(
-                result.chat_id,
-                f"❌ Error: {result.details.get('detail', 'Unknown error')}"
-            )
-            
-        return {"status": "ok"}
         
-    except json.JSONDecodeError:
-        print("Invalid JSON received")
-        raise HTTPException(status_code=400, detail="Invalid JSON")
-    except Exception as e:
-        print("Error processing webhook:", str(e))
-        raise HTTPException(status_code=500, detail=str(e))
+        elif response.status == "success":
+            print("👍Success response", response)
+            await telegram_service._send_message(
+                result.chat_id,
+                response.details.get("message", "Success do not worry.")
+            )
+        return {"status": "add_expense_command handled"}
+
+    return {"status": "ok"}
+
+@router.get("/")
+async def home(request: Request):
+    return {"OK": "Alive"}

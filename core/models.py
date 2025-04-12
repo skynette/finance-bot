@@ -50,6 +50,23 @@ class Currency(models.Model):
         if self.symbol:
             return f"{self.code} ({self.symbol})"
         return self.code
+    
+    def save(self, *args, **kwargs):
+        if self.is_default:
+            Currency.objects.filter(is_default=True).exclude(pk=self.pk).update(is_default=False)
+        super().save(*args, **kwargs)
+    
+    @classmethod
+    def get_default(cls):
+        """Get the default currency, or the first one if no default exists"""
+        default = cls.objects.filter(is_default=True).first()
+        if not default:
+            default = cls.objects.first()
+        return default
+
+def get_default_currency():
+    """Function to get the default currency ID for use in models"""
+    return Currency.get_default().id if Currency.get_default() else None
 
 class Category(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='categories')
@@ -71,8 +88,13 @@ class Category(models.Model):
 class Income(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='incomes')
     amount = models.DecimalField(max_digits=10, decimal_places=2)
-    currency = models.ForeignKey(Currency, on_delete=models.PROTECT, related_name='incomes')
-    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='incomes')
+    currency = models.ForeignKey(
+        Currency, 
+        on_delete=models.PROTECT, 
+        related_name='incomes',
+        default=get_default_currency
+    )
+    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='incomes', default=None, null=True, blank=True)
     date = models.DateTimeField(default=timezone.now)
     description = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -94,8 +116,13 @@ class Income(models.Model):
 class Expense(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='expenses')
     amount = models.DecimalField(max_digits=10, decimal_places=2)
-    currency = models.ForeignKey(Currency, on_delete=models.PROTECT, related_name='expenses')
-    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='expenses')
+    currency = models.ForeignKey(
+        Currency, 
+        on_delete=models.PROTECT, 
+        related_name='expenses',
+        default=get_default_currency
+    )
+    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='expenses', default=None, null=True, blank=True)
     date = models.DateTimeField(default=timezone.now)
     description = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)

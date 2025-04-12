@@ -1,0 +1,1224 @@
+[
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "api.dependencies",
+        "description": "api.dependencies",
+        "isExtraImport": true,
+        "detail": "api.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "FinanceService",
+        "importPath": "api.services",
+        "description": "api.services",
+        "isExtraImport": true,
+        "detail": "api.services",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramUpdate",
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "isExtraImport": true,
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "CommandResponse",
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "isExtraImport": true,
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramUpdate",
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "isExtraImport": true,
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "CommandResponse",
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "isExtraImport": true,
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "FinancialRecord",
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "isExtraImport": true,
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramService",
+        "importPath": "api.services.telegram",
+        "description": "api.services.telegram",
+        "isExtraImport": true,
+        "detail": "api.services.telegram",
+        "documentation": {}
+    },
+    {
+        "label": "FinanceService",
+        "importPath": "api.services.finance",
+        "description": "api.services.finance",
+        "isExtraImport": true,
+        "detail": "api.services.finance",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "core.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "core.models",
+        "description": "core.models",
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Income",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Expense",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Currency",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Currency",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Currency",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "sync_to_async",
+        "importPath": "asgiref.sync",
+        "description": "asgiref.sync",
+        "isExtraImport": true,
+        "detail": "asgiref.sync",
+        "documentation": {}
+    },
+    {
+        "label": "httpx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "httpx",
+        "description": "httpx",
+        "detail": "httpx",
+        "documentation": {}
+    },
+    {
+        "label": "CommandParser",
+        "importPath": "api.services.commnad_parser",
+        "description": "api.services.commnad_parser",
+        "isExtraImport": true,
+        "detail": "api.services.commnad_parser",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "JWTError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "django",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django",
+        "description": "django",
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "telegram",
+        "importPath": "api.routers",
+        "description": "api.routers",
+        "isExtraImport": true,
+        "detail": "api.routers",
+        "documentation": {}
+    },
+    {
+        "label": "finance",
+        "importPath": "api.routers",
+        "description": "api.routers",
+        "isExtraImport": true,
+        "detail": "api.routers",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "BaseCommand",
+        "importPath": "django.core.management.base",
+        "description": "django.core.management.base",
+        "isExtraImport": true,
+        "detail": "django.core.management.base",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.validators",
+        "description": "django.contrib.auth.validators",
+        "detail": "django.contrib.auth.validators",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "importPath": "django.contrib.auth.admin",
+        "description": "django.contrib.auth.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "call_command",
+        "importPath": "django.core.management",
+        "description": "django.core.management",
+        "isExtraImport": true,
+        "detail": "django.core.management",
+        "documentation": {}
+    },
+    {
+        "label": "StringIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "TokenObtainPairView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenRefreshView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "api.routers.finance",
+        "description": "api.routers.finance",
+        "peekOfCode": "router = APIRouter(prefix=\"/finance\", tags=[\"finance\"])\n@router.get(\"/currencies\")\nasync def list_currencies():\n    # Implement currency listing\n    pass",
+        "detail": "api.routers.finance",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "api.routers.telegram",
+        "description": "api.routers.telegram",
+        "peekOfCode": "User = get_user_model()\nrouter = APIRouter()\ntoken = os.environ.get(\"TELEGRAM_BOT_TOKEN\")\ntelegram_service = TelegramService(token=token)\nhelp_text = (\n\"\"\"*FinanceBot Help:*\\n\nUse the following commands:\n`/add_income [amount] [category] [description]` - Log an income\n`/add_expense [amount] [category] [description]` - Log an expense\n`/help` - Show this message again\"\"\"",
+        "detail": "api.routers.telegram",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "api.routers.telegram",
+        "description": "api.routers.telegram",
+        "peekOfCode": "router = APIRouter()\ntoken = os.environ.get(\"TELEGRAM_BOT_TOKEN\")\ntelegram_service = TelegramService(token=token)\nhelp_text = (\n\"\"\"*FinanceBot Help:*\\n\nUse the following commands:\n`/add_income [amount] [category] [description]` - Log an income\n`/add_expense [amount] [category] [description]` - Log an expense\n`/help` - Show this message again\"\"\"\n)",
+        "detail": "api.routers.telegram",
+        "documentation": {}
+    },
+    {
+        "label": "token",
+        "kind": 5,
+        "importPath": "api.routers.telegram",
+        "description": "api.routers.telegram",
+        "peekOfCode": "token = os.environ.get(\"TELEGRAM_BOT_TOKEN\")\ntelegram_service = TelegramService(token=token)\nhelp_text = (\n\"\"\"*FinanceBot Help:*\\n\nUse the following commands:\n`/add_income [amount] [category] [description]` - Log an income\n`/add_expense [amount] [category] [description]` - Log an expense\n`/help` - Show this message again\"\"\"\n)\n@router.post(\"/webhook\")",
+        "detail": "api.routers.telegram",
+        "documentation": {}
+    },
+    {
+        "label": "telegram_service",
+        "kind": 5,
+        "importPath": "api.routers.telegram",
+        "description": "api.routers.telegram",
+        "peekOfCode": "telegram_service = TelegramService(token=token)\nhelp_text = (\n\"\"\"*FinanceBot Help:*\\n\nUse the following commands:\n`/add_income [amount] [category] [description]` - Log an income\n`/add_expense [amount] [category] [description]` - Log an expense\n`/help` - Show this message again\"\"\"\n)\n@router.post(\"/webhook\")\nasync def telegram_webhook(request: Request):",
+        "detail": "api.routers.telegram",
+        "documentation": {}
+    },
+    {
+        "label": "help_text",
+        "kind": 5,
+        "importPath": "api.routers.telegram",
+        "description": "api.routers.telegram",
+        "peekOfCode": "help_text = (\n\"\"\"*FinanceBot Help:*\\n\nUse the following commands:\n`/add_income [amount] [category] [description]` - Log an income\n`/add_expense [amount] [category] [description]` - Log an expense\n`/help` - Show this message again\"\"\"\n)\n@router.post(\"/webhook\")\nasync def telegram_webhook(request: Request):\n    update_data = await request.json()",
+        "detail": "api.routers.telegram",
+        "documentation": {}
+    },
+    {
+        "label": "CommandParser",
+        "kind": 6,
+        "importPath": "api.services.commnad_parser",
+        "description": "api.services.commnad_parser",
+        "peekOfCode": "class CommandParser:\n    @staticmethod\n    def parse_command(text: str) -> dict:\n        if not text or not text.startswith(\"/\"):\n            raise HTTPException(status_code=400, detail=\"Invalid command format\")\n        parts = text.strip().split()\n        command = parts[0]\n        args = parts[1:]\n        return {\n            \"command\": command,",
+        "detail": "api.services.commnad_parser",
+        "documentation": {}
+    },
+    {
+        "label": "FinanceService",
+        "kind": 6,
+        "importPath": "api.services.finance",
+        "description": "api.services.finance",
+        "peekOfCode": "class FinanceService:\n    @staticmethod\n    async def handle_add_income_command(args: list, user_id: int) -> CommandResponse:\n        error_message = (\n        \"\"\"❌ Invalid format for `/add_income` command.\n        Usage: `/add_income [amount] [category] [description (optional)]`\n        Example: `/add_income 200 Salary Monthly paycheck`\n        \"\"\"\n        )\n        if not args or len(args) < 2:",
+        "detail": "api.services.finance",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramService",
+        "kind": 6,
+        "importPath": "api.services.telegram",
+        "description": "api.services.telegram",
+        "peekOfCode": "class TelegramService:\n    def __init__(self, token: str):\n        self.token = token\n        self.api_url = f\"https://api.telegram.org/bot{token}\"\n    async def process_update(self, update: TelegramUpdate) -> CommandResponse:\n        if update.message:\n            chat_id = update.message.chat.id\n            text = update.message.text\n            from_user = update.message.from_user\n            await self.get_or_create_user_by_telegram_id(",
+        "detail": "api.services.telegram",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "api.services.telegram",
+        "description": "api.services.telegram",
+        "peekOfCode": "User = get_user_model()\nclass TelegramService:\n    def __init__(self, token: str):\n        self.token = token\n        self.api_url = f\"https://api.telegram.org/bot{token}\"\n    async def process_update(self, update: TelegramUpdate) -> CommandResponse:\n        if update.message:\n            chat_id = update.message.chat.id\n            text = update.message.text\n            from_user = update.message.from_user",
+        "detail": "api.services.telegram",
+        "documentation": {}
+    },
+    {
+        "label": "UserService",
+        "kind": 6,
+        "importPath": "api.services.user",
+        "description": "api.services.user",
+        "peekOfCode": "class UserService:\n    @staticmethod\n    def get_or_create_user_by_telegram_id(tg_id: int, first_name: str = \"\", username: str = \"\"):\n        from django.db.models import Q\n        user, created = User.objects.get_or_create(\n            telegram_id=tg_id,\n            defaults={\"first_name\": first_name, \"username\": username}\n        )\n        return user",
+        "detail": "api.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "api.services.user",
+        "description": "api.services.user",
+        "peekOfCode": "User = get_user_model()\nclass UserService:\n    @staticmethod\n    def get_or_create_user_by_telegram_id(tg_id: int, first_name: str = \"\", username: str = \"\"):\n        from django.db.models import Q\n        user, created = User.objects.get_or_create(\n            telegram_id=tg_id,\n            defaults={\"first_name\": first_name, \"username\": username}\n        )\n        return user",
+        "detail": "api.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "oauth2_scheme",
+        "kind": 5,
+        "importPath": "api.dependencies",
+        "description": "api.dependencies",
+        "peekOfCode": "oauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"token\")\nasync def get_current_user(token: str = Depends(oauth2_scheme)):\n    try:\n        payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[\"HS256\"])\n        if (user_id := payload.get(\"user_id\")) is None:\n            raise HTTPException(status_code=401, detail=\"Invalid token\")\n        return user_id\n    except JWTError:\n        raise HTTPException(status_code=401, detail=\"Invalid token\")",
+        "detail": "api.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "api.main",
+        "description": "api.main",
+        "peekOfCode": "app = FastAPI()\n# CORS Middleware\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\n# Include routers",
+        "detail": "api.main",
+        "documentation": {}
+    },
+    {
+        "label": "MessageEntity",
+        "kind": 6,
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "peekOfCode": "class MessageEntity(BaseModel):\n    offset: int\n    length: int\n    type: str\nclass TelegramUser(BaseModel):\n    id: int\n    is_bot: bool = False\n    first_name: str\n    username: Optional[str] = None\n    language_code: Optional[str] = None",
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramUser",
+        "kind": 6,
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "peekOfCode": "class TelegramUser(BaseModel):\n    id: int\n    is_bot: bool = False\n    first_name: str\n    username: Optional[str] = None\n    language_code: Optional[str] = None\nclass TelegramChat(BaseModel):\n    id: int\n    type: str\n    first_name: Optional[str] = None",
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramChat",
+        "kind": 6,
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "peekOfCode": "class TelegramChat(BaseModel):\n    id: int\n    type: str\n    first_name: Optional[str] = None\n    username: Optional[str] = None\nclass TelegramMessage(BaseModel):\n    message_id: int\n    from_user: Optional[TelegramUser] = Field(None, alias=\"from\")\n    chat: TelegramChat\n    date: int",
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramMessage",
+        "kind": 6,
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "peekOfCode": "class TelegramMessage(BaseModel):\n    message_id: int\n    from_user: Optional[TelegramUser] = Field(None, alias=\"from\")\n    chat: TelegramChat\n    date: int\n    text: Optional[str] = None\n    entities: Optional[List[MessageEntity]] = None\nclass TelegramUpdate(BaseModel):\n    update_id: int\n    message: Optional[TelegramMessage] = None",
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramUpdate",
+        "kind": 6,
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "peekOfCode": "class TelegramUpdate(BaseModel):\n    update_id: int\n    message: Optional[TelegramMessage] = None\nclass FinancialRecord(BaseModel):\n    amount: float\n    currency_code: str\n    category_name: str\n    description: Optional[str] = None\nclass CommandResponse(BaseModel):\n    status: str",
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "FinancialRecord",
+        "kind": 6,
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "peekOfCode": "class FinancialRecord(BaseModel):\n    amount: float\n    currency_code: str\n    category_name: str\n    description: Optional[str] = None\nclass CommandResponse(BaseModel):\n    status: str\n    details: dict\n    chat_id: Optional[int] = None",
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "CommandResponse",
+        "kind": 6,
+        "importPath": "api.schemas",
+        "description": "api.schemas",
+        "peekOfCode": "class CommandResponse(BaseModel):\n    status: str\n    details: dict\n    chat_id: Optional[int] = None",
+        "detail": "api.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "kind": 6,
+        "importPath": "core.management.commands.load_currencies",
+        "description": "core.management.commands.load_currencies",
+        "peekOfCode": "class Command(BaseCommand):\n    help = 'Loads default currencies into the database'\n    @transaction.atomic\n    def handle(self, *args, **kwargs):\n        default_currencies = [\n            {'code': 'NGN', 'name': 'Nigerian Naira', 'symbol': '₦', 'is_default': True},\n            {'code': 'USD', 'name': 'US Dollar', 'symbol': '$', 'is_default': False},\n            {'code': 'EUR', 'name': 'Euro', 'symbol': '€', 'is_default': False},\n            {'code': 'GBP', 'name': 'British Pound', 'symbol': '£', 'is_default': False},\n            {'code': 'JPY', 'name': 'Japanese Yen', 'symbol': '¥', 'is_default': False},",
+        "detail": "core.management.commands.load_currencies",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "core.migrations.0001_initial",
+        "description": "core.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Currency',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "core.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "core.migrations.0002_alter_category_options_alter_currency_options_and_more",
+        "description": "core.migrations.0002_alter_category_options_alter_currency_options_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n        ('core', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='category',\n            options={'ordering': ['name'], 'verbose_name': 'Category', 'verbose_name_plural': 'Categories'},\n        ),",
+        "detail": "core.migrations.0002_alter_category_options_alter_currency_options_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "core.migrations.0003_alter_category_user_alter_expense_user_and_more",
+        "description": "core.migrations.0003_alter_category_user_alter_expense_user_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0002_alter_category_options_alter_currency_options_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='category',\n            name='user',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='categories', to='core.user'),\n        ),",
+        "detail": "core.migrations.0003_alter_category_user_alter_expense_user_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "core.migrations.0004_alter_expense_currency_alter_income_currency",
+        "description": "core.migrations.0004_alter_expense_currency_alter_income_currency",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0003_alter_category_user_alter_expense_user_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='expense',\n            name='currency',\n            field=models.ForeignKey(default=core.models.get_default_currency, on_delete=django.db.models.deletion.PROTECT, related_name='expenses', to='core.currency'),\n        ),",
+        "detail": "core.migrations.0004_alter_expense_currency_alter_income_currency",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "core.migrations.0005_alter_expense_category_alter_income_category",
+        "description": "core.migrations.0005_alter_expense_category_alter_income_category",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0004_alter_expense_currency_alter_income_currency'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='expense',\n            name='category',\n            field=models.ForeignKey(blank=True, default=None, null=True, on_delete=django.db.models.deletion.PROTECT, related_name='expenses', to='core.category'),\n        ),",
+        "detail": "core.migrations.0005_alter_expense_category_alter_income_category",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUserAdmin",
+        "kind": 6,
+        "importPath": "core.admin",
+        "description": "core.admin",
+        "peekOfCode": "class CustomUserAdmin(UserAdmin):\n    fieldsets = UserAdmin.fieldsets + (\n        ('Telegram Information', {'fields': (\n            'telegram_id', \n            'telegram_username', \n            'telegram_first_name', \n            'telegram_last_name',\n            'telegram_photo_url',\n            'telegram_language_code',\n            'is_telegram_user',",
+        "detail": "core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CoreConfig",
+        "kind": 6,
+        "importPath": "core.apps",
+        "description": "core.apps",
+        "peekOfCode": "class CoreConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'core'",
+        "detail": "core.apps",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "core.models",
+        "description": "core.models",
+        "peekOfCode": "class User(AbstractUser):\n    groups = models.ManyToManyField(\n        'auth.Group',\n        related_name='custom_user_set',\n        blank=True,\n        help_text='The groups this user belongs to.',\n        verbose_name='groups',\n    )\n    user_permissions = models.ManyToManyField(\n        'auth.Permission',",
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Currency",
+        "kind": 6,
+        "importPath": "core.models",
+        "description": "core.models",
+        "peekOfCode": "class Currency(models.Model):\n    code = models.CharField(max_length=3, unique=True)\n    name = models.CharField(max_length=50)\n    symbol = models.CharField(max_length=5, blank=True)\n    is_default = models.BooleanField(default=False)\n    class Meta:\n        verbose_name = 'Currency'\n        verbose_name_plural = 'Currencies'\n        ordering = ['code']\n    def __str__(self):",
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "kind": 6,
+        "importPath": "core.models",
+        "description": "core.models",
+        "peekOfCode": "class Category(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='categories')\n    name = models.CharField(max_length=100)\n    description = models.TextField(blank=True)\n    is_active = models.BooleanField(default=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    class Meta:\n        verbose_name = 'Category'\n        verbose_name_plural = 'Categories'",
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Income",
+        "kind": 6,
+        "importPath": "core.models",
+        "description": "core.models",
+        "peekOfCode": "class Income(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='incomes')\n    amount = models.DecimalField(max_digits=10, decimal_places=2)\n    currency = models.ForeignKey(\n        Currency, \n        on_delete=models.PROTECT, \n        related_name='incomes',\n        default=get_default_currency\n    )\n    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='incomes', default=None, null=True, blank=True)",
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Expense",
+        "kind": 6,
+        "importPath": "core.models",
+        "description": "core.models",
+        "peekOfCode": "class Expense(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='expenses')\n    amount = models.DecimalField(max_digits=10, decimal_places=2)\n    currency = models.ForeignKey(\n        Currency, \n        on_delete=models.PROTECT, \n        related_name='expenses',\n        default=get_default_currency\n    )\n    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='expenses', default=None, null=True, blank=True)",
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "get_default_currency",
+        "kind": 2,
+        "importPath": "core.models",
+        "description": "core.models",
+        "peekOfCode": "def get_default_currency():\n    \"\"\"Function to get the default currency ID for use in models\"\"\"\n    return Currency.get_default().id if Currency.get_default() else None\nclass Category(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='categories')\n    name = models.CharField(max_length=100)\n    description = models.TextField(blank=True)\n    is_active = models.BooleanField(default=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)",
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "CurrencyCommandTest",
+        "kind": 6,
+        "importPath": "core.tests",
+        "description": "core.tests",
+        "peekOfCode": "class CurrencyCommandTest(TestCase):\n    def test_load_currencies_command(self):\n        out = StringIO()\n        call_command('load_currencies', stdout=out)\n        currencies = Currency.objects.all()\n        self.assertTrue(currencies.exists())\n        default_currency = Currency.objects.filter(is_default=True).first()\n        self.assertIsNotNone(default_currency)\n        self.assertTrue(Currency.objects.filter(code='USD').exists())\n        self.assertTrue(Currency.objects.filter(code='EUR').exists())",
+        "detail": "core.tests",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "django_app.asgi",
+        "description": "django_app.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "django_app.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-+7(f3g6gv$)&yy1!$ep$gz#rcn!6%142-!a=x#e+s6(f38q=if'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-+7(f3g6gv$)&yy1!$ep$gz#rcn!6%142-!a=x#e+s6(f38q=if'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'rest_framework_simplejwt',\n    'core',",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),\n    # time to expire the token in 1 day\n    'SIMPLE_JWT': {\n        'ACCESS_TOKEN_LIFETIME': timedelta(days=1),\n        'REFRESH_TOKEN_LIFETIME': timedelta(days=7),\n        # 'ROTATE_REFRESH_TOKENS': True,\n    }",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'django_app.urls'",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "ROOT_URLCONF = 'django_app.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',\n                'django.contrib.messages.context_processors.messages',",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'django_app.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'core.User'",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'core.User'",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'core.User'",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'core.User'",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'core.User'",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "django_app.settings",
+        "description": "django_app.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'core.User'",
+        "detail": "django_app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "django_app.urls",
+        "description": "django_app.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),\n    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),\n]",
+        "detail": "django_app.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "django_app.wsgi",
+        "description": "django_app.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "django_app.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "parse_income_command",
+        "kind": 2,
+        "importPath": "utils.parsers",
+        "description": "utils.parsers",
+        "peekOfCode": "def parse_income_command(args: list) -> FinancialRecord:\n    try:\n        if len(args) < 2:\n            raise ValueError(\"Format: `/add_income [amount] [currency] [category]`\")\n        return FinancialRecord(\n            amount=float(args[0]),\n            currency_code=args[1].upper(),\n            category_name=\" \".join(args[2:]) if len(args) > 2 else \"General\",\n            description=f\"Income: {' '.join(args[2:])}\" if len(args) > 2 else None\n        )",
+        "detail": "utils.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "parse_expense_command",
+        "kind": 2,
+        "importPath": "utils.parsers",
+        "description": "utils.parsers",
+        "peekOfCode": "def parse_expense_command(args: list) -> FinancialRecord:\n    try:\n        if len(args) < 2:\n            raise ValueError(\"Format: `/add_expense [amount] [currency] [category]`\")\n        return FinancialRecord(\n            amount=float(args[0]),\n            currency_code=args[1].upper(),\n            category_name=\" \".join(args[2:]) if len(args) > 2 else \"General\",\n            description=f\"Expense: {' '.join(args[2:])}\" if len(args) > 2 else None\n        )",
+        "detail": "utils.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_app.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
