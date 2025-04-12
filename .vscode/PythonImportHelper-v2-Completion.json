@@ -194,7 +194,7 @@
         "documentation": {}
     },
     {
-        "label": "Income",
+        "label": "Category",
         "importPath": "core.models",
         "description": "core.models",
         "isExtraImport": true,
@@ -210,7 +210,15 @@
         "documentation": {}
     },
     {
-        "label": "Category",
+        "label": "get_default_currency",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Income",
         "importPath": "core.models",
         "description": "core.models",
         "isExtraImport": true,
@@ -397,6 +405,38 @@
     },
     {
         "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -916,6 +956,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "core.migrations.0006_alter_expense_category_alter_expense_currency_and_more",
+        "description": "core.migrations.0006_alter_expense_category_alter_expense_currency_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0005_alter_expense_category_alter_income_category'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='expense',\n            name='category',\n            field=models.ForeignKey(blank=True, default=None, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='expenses', to='core.category'),\n        ),",
+        "detail": "core.migrations.0006_alter_expense_category_alter_expense_currency_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "core.migrations.0007_alter_expense_currency_alter_income_currency",
+        "description": "core.migrations.0007_alter_expense_currency_alter_income_currency",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0006_alter_expense_category_alter_expense_currency_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='expense',\n            name='currency',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='expenses', to='core.currency'),\n        ),",
+        "detail": "core.migrations.0007_alter_expense_currency_alter_income_currency",
+        "documentation": {}
+    },
+    {
         "label": "CustomUserAdmin",
         "kind": 6,
         "importPath": "core.admin",
@@ -965,7 +1023,7 @@
         "kind": 6,
         "importPath": "core.models",
         "description": "core.models",
-        "peekOfCode": "class Income(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='incomes')\n    amount = models.DecimalField(max_digits=10, decimal_places=2)\n    currency = models.ForeignKey(\n        Currency, \n        on_delete=models.PROTECT, \n        related_name='incomes',\n        default=get_default_currency\n    )\n    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='incomes', default=None, null=True, blank=True)",
+        "peekOfCode": "class Income(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='incomes')\n    amount = models.DecimalField(max_digits=10, decimal_places=2)\n    currency = models.ForeignKey(\n        Currency, \n        on_delete=models.CASCADE, \n        related_name='incomes',\n    )\n    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='incomes', default=None, null=True, blank=True)\n    date = models.DateTimeField(default=timezone.now)",
         "detail": "core.models",
         "documentation": {}
     },
@@ -974,7 +1032,7 @@
         "kind": 6,
         "importPath": "core.models",
         "description": "core.models",
-        "peekOfCode": "class Expense(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='expenses')\n    amount = models.DecimalField(max_digits=10, decimal_places=2)\n    currency = models.ForeignKey(\n        Currency, \n        on_delete=models.PROTECT, \n        related_name='expenses',\n        default=get_default_currency\n    )\n    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='expenses', default=None, null=True, blank=True)",
+        "peekOfCode": "class Expense(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='expenses')\n    amount = models.DecimalField(max_digits=10, decimal_places=2)\n    currency = models.ForeignKey(\n        Currency, \n        on_delete=models.CASCADE, \n        related_name='expenses',\n    )\n    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='expenses', default=None, null=True, blank=True)\n    date = models.DateTimeField(default=timezone.now)",
         "detail": "core.models",
         "documentation": {}
     },
@@ -983,7 +1041,7 @@
         "kind": 2,
         "importPath": "core.models",
         "description": "core.models",
-        "peekOfCode": "def get_default_currency():\n    \"\"\"Function to get the default currency ID for use in models\"\"\"\n    return Currency.get_default().id if Currency.get_default() else None\nclass Category(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='categories')\n    name = models.CharField(max_length=100)\n    description = models.TextField(blank=True)\n    is_active = models.BooleanField(default=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)",
+        "peekOfCode": "def get_default_currency():\n    \"\"\"Function to get the default currency ID for use in models\"\"\"\n    return Currency.get_default() if Currency.get_default() else None\nclass Category(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='categories')\n    name = models.CharField(max_length=100)\n    description = models.TextField(blank=True)\n    is_active = models.BooleanField(default=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)",
         "detail": "core.models",
         "documentation": {}
     },

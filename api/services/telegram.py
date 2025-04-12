@@ -63,6 +63,12 @@ class TelegramService:
                     details={},
                     chat_id=chat_id
                 )
+            else:
+                return CommandResponse(
+                    status="unknown_command",
+                    details={},
+                    chat_id=chat_id
+                )
 
         raise HTTPException(status_code=400, detail="Unsupported update")
 
@@ -75,6 +81,7 @@ class TelegramService:
         return user
 
     async def _send_message(self, chat_id: int, text: str):
+        print("✅ _Sending Message:", text)
         async with httpx.AsyncClient() as client:
             res = await client.post(
                 f"{self.api_url}/sendMessage",

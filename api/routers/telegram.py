@@ -26,8 +26,7 @@ async def telegram_webhook(request: Request):
     update_data = await request.json()
     update = TelegramUpdate(**update_data)
     result = await telegram_service.process_update(update)
-    print("✅ result from telegram service process update function", result)
-    
+        
     if result.status == "start_command":
         await telegram_service._send_message(
             result.chat_id,
@@ -56,7 +55,6 @@ async def telegram_webhook(request: Request):
                 response.details.get("message", "Success do not worry.")
             )
         
-        print("else case response", response)
         return {"status": "add_income_command handled"}
 
     elif result.status == "add_expense_command":
@@ -79,7 +77,12 @@ async def telegram_webhook(request: Request):
                 response.details.get("message", "Success do not worry.")
             )
         return {"status": "add_expense_command handled"}
-
+    else:
+        print("😒 ELSE CASE HANDLED")
+        await telegram_service._send_message(
+            update.message.chat.id,
+            "ERROR UNKNOWN COMMAND"
+        )
     return {"status": "ok"}
 
 @router.get("/")

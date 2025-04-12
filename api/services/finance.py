@@ -1,5 +1,5 @@
 from api.schemas import CommandResponse
-from core.models import Income, Expense, Category, User
+from core.models import Category, Expense, get_default_currency, Income, User
 from asgiref.sync import sync_to_async
 
 class FinanceService:
@@ -101,30 +101,30 @@ class FinanceService:
     async def create_income(record_data: dict, user_id: int) -> CommandResponse:
         try:
             user = await User.objects.aget(id=user_id)
-            print("user gotten is ", user)
 
-            category, _ = await sync_to_async(Category.objects.get_or_create)(
+            category, _ = await Category.objects.aget_or_create(
                 user=user,
                 name=record_data["category_name"],
                 defaults={'is_active': True}
             )
-            print("category is", category)
             
-            income = await sync_to_async(Income.objects.create)(
+            currency = await sync_to_async(get_default_currency)()
+            
+            income = await Income.objects.acreate(
                 user=user,
                 amount=record_data["amount"],
                 category=category,
+                currency=currency,
                 description=record_data.get("description", "")
             )
-            print("income record created is", income)
-
+            
             return CommandResponse(
                 status="success",
                 details={
                     "type": "income",
                     "amount": record_data["amount"],
-                    "category": "category.name",
-                    "currency": income.currency
+                    "category": category.name,
+                    "currency": currency.code,
                 }
             )
 
@@ -145,11 +145,14 @@ class FinanceService:
                 name=record_data["category_name"],
                 defaults={'is_active': True}
             )
+            
+            currency = await sync_to_async(get_default_currency)()
 
             expense = await Expense.objects.acreate(
                 user=user,
                 amount=record_data["amount"],
                 category=category,
+                currency=currency,
                 description=record_data.get("description", "")
             )
 
@@ -159,7 +162,7 @@ class FinanceService:
                     "type": "expense",
                     "amount": expense.amount,
                     "category": category.name,
-                    "currency": expense.currency
+                    "currency": currency.code
                 }
             )
 

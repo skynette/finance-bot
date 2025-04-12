@@ -66,7 +66,7 @@ class Currency(models.Model):
 
 def get_default_currency():
     """Function to get the default currency ID for use in models"""
-    return Currency.get_default().id if Currency.get_default() else None
+    return Currency.get_default() if Currency.get_default() else None
 
 class Category(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='categories')
@@ -90,11 +90,10 @@ class Income(models.Model):
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     currency = models.ForeignKey(
         Currency, 
-        on_delete=models.PROTECT, 
+        on_delete=models.CASCADE, 
         related_name='incomes',
-        default=get_default_currency
     )
-    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='incomes', default=None, null=True, blank=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='incomes', default=None, null=True, blank=True)
     date = models.DateTimeField(default=timezone.now)
     description = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -106,7 +105,7 @@ class Income(models.Model):
         ordering = ['-date']
     
     def __str__(self):
-        return f"{self.amount} {self.currency.code} - {self.category.name} ({self.date.strftime('%Y-%m-%d')})"
+        return f"{self.amount} {self.currency.code} - ({self.date.strftime('%Y-%m-%d')})"
     
     def get_absolute_url(self):
         from django.urls import reverse
@@ -118,11 +117,10 @@ class Expense(models.Model):
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     currency = models.ForeignKey(
         Currency, 
-        on_delete=models.PROTECT, 
+        on_delete=models.CASCADE, 
         related_name='expenses',
-        default=get_default_currency
     )
-    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='expenses', default=None, null=True, blank=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='expenses', default=None, null=True, blank=True)
     date = models.DateTimeField(default=timezone.now)
     description = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -134,4 +132,4 @@ class Expense(models.Model):
         ordering = ['-date']
     
     def __str__(self):
-        return f"{self.amount} {self.currency.code} - {self.category.name}"
+        return f"{self.amount} {self.currency.code}"
