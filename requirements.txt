@@ -9,6 +9,8 @@ cryptography==44.0.2
 Django==5.2
 djangorestframework==3.16.0
 djangorestframework_simplejwt==5.5.0
+django-cors-headers
+psycopg2-binary
 ecdsa==0.19.1
 exceptiongroup==1.2.2
 fastapi==0.115.12
@@ -33,3 +35,4 @@ typing-inspection==0.4.0
 typing_extensions==4.13.1
 tzdata==2025.2
 uvicorn==0.34.0
+whitenoise
