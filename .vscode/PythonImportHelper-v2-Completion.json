@@ -193,15 +193,6 @@
         "documentation": {}
     },
     {
-        "label": "core.models",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "core.models",
-        "description": "core.models",
-        "detail": "core.models",
-        "documentation": {}
-    },
-    {
         "label": "Category",
         "importPath": "core.models",
         "description": "core.models",
@@ -331,14 +322,6 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
         "label": "CORSMiddleware",
         "importPath": "fastapi.middleware.cors",
         "description": "fastapi.middleware.cors",
@@ -436,116 +419,11 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "django.db.models.deletion",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.db.models.deletion",
-        "description": "django.db.models.deletion",
-        "detail": "django.db.models.deletion",
         "documentation": {}
     },
     {
@@ -572,6 +450,15 @@
         "importPath": "django.contrib.auth.validators",
         "description": "django.contrib.auth.validators",
         "detail": "django.contrib.auth.validators",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
         "documentation": {}
     },
     {
@@ -923,62 +810,8 @@
         "kind": 6,
         "importPath": "core.migrations.0001_initial",
         "description": "core.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Currency',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Currency',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "core.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "core.migrations.0002_alter_category_options_alter_currency_options_and_more",
-        "description": "core.migrations.0002_alter_category_options_alter_currency_options_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n        ('core', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='category',\n            options={'ordering': ['name'], 'verbose_name': 'Category', 'verbose_name_plural': 'Categories'},\n        ),",
-        "detail": "core.migrations.0002_alter_category_options_alter_currency_options_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "core.migrations.0003_alter_category_user_alter_expense_user_and_more",
-        "description": "core.migrations.0003_alter_category_user_alter_expense_user_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0002_alter_category_options_alter_currency_options_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='category',\n            name='user',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='categories', to='core.user'),\n        ),",
-        "detail": "core.migrations.0003_alter_category_user_alter_expense_user_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "core.migrations.0004_alter_expense_currency_alter_income_currency",
-        "description": "core.migrations.0004_alter_expense_currency_alter_income_currency",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0003_alter_category_user_alter_expense_user_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='expense',\n            name='currency',\n            field=models.ForeignKey(default=core.models.get_default_currency, on_delete=django.db.models.deletion.PROTECT, related_name='expenses', to='core.currency'),\n        ),",
-        "detail": "core.migrations.0004_alter_expense_currency_alter_income_currency",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "core.migrations.0005_alter_expense_category_alter_income_category",
-        "description": "core.migrations.0005_alter_expense_category_alter_income_category",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0004_alter_expense_currency_alter_income_currency'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='expense',\n            name='category',\n            field=models.ForeignKey(blank=True, default=None, null=True, on_delete=django.db.models.deletion.PROTECT, related_name='expenses', to='core.category'),\n        ),",
-        "detail": "core.migrations.0005_alter_expense_category_alter_income_category",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "core.migrations.0006_alter_expense_category_alter_expense_currency_and_more",
-        "description": "core.migrations.0006_alter_expense_category_alter_expense_currency_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0005_alter_expense_category_alter_income_category'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='expense',\n            name='category',\n            field=models.ForeignKey(blank=True, default=None, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='expenses', to='core.category'),\n        ),",
-        "detail": "core.migrations.0006_alter_expense_category_alter_expense_currency_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "core.migrations.0007_alter_expense_currency_alter_income_currency",
-        "description": "core.migrations.0007_alter_expense_currency_alter_income_currency",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0006_alter_expense_category_alter_expense_currency_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='expense',\n            name='currency',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='expenses', to='core.currency'),\n        ),",
-        "detail": "core.migrations.0007_alter_expense_currency_alter_income_currency",
         "documentation": {}
     },
     {
