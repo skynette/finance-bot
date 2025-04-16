@@ -6,6 +6,9 @@ echo "Running database migrations..."
 python manage.py makemigrations
 python manage.py migrate
 
+echo "Loading default data..."
+python manage.py load_currencies
+
 # Create superuser if it doesn't exist already
 # This script uses environment variables to avoid hardcoding credentials
 if [[ -n "$DJANGO_SUPERUSER_USERNAME" ]] && [[ -n "$DJANGO_SUPERUSER_EMAIL" ]] && [[ -n "$DJANGO_SUPERUSER_PASSWORD" ]]; then
