@@ -23,6 +23,21 @@ Use the following commands:
     
 @router.post("/webhook")
 async def telegram_webhook(request: Request):
+    """
+    Process incoming Telegram updates and execute bot commands.
+    
+    This endpoint receives updates from Telegram's webhook system and processes them
+    according to the bot's command structure. It supports various commands for managing
+    financial transactions.
+    
+    Commands:
+    - /start: Initialize the bot
+    - /help: Show available commands
+    - /add_income: Record a new income transaction
+    - /add_expense: Record a new expense transaction
+    
+    The endpoint automatically creates or updates user records based on Telegram user information.
+    """
     update_data = await request.json()
     update = TelegramUpdate(**update_data)
     result = await telegram_service.process_update(update)

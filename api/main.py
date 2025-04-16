@@ -23,4 +23,4 @@ app.add_middleware(
 
 # Include routers
 app.include_router(telegram.router)
-app.include_router(finance.router)
+# app.include_router(finance.router)

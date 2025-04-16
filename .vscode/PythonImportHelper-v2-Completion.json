@@ -657,7 +657,7 @@
         "kind": 5,
         "importPath": "api.routers.telegram",
         "description": "api.routers.telegram",
-        "peekOfCode": "help_text = (\n\"\"\"*FinanceBot Help:*\\n\nUse the following commands:\n`/add_income [amount] [category] [description]` - Log an income\n`/add_expense [amount] [category] [description]` - Log an expense\n`/help` - Show this message again\"\"\"\n)\n@router.post(\"/webhook\")\nasync def telegram_webhook(request: Request):\n    update_data = await request.json()",
+        "peekOfCode": "help_text = (\n\"\"\"*FinanceBot Help:*\\n\nUse the following commands:\n`/add_income [amount] [category] [description]` - Log an income\n`/add_expense [amount] [category] [description]` - Log an expense\n`/help` - Show this message again\"\"\"\n)\n@router.post(\"/webhook\")\nasync def telegram_webhook(request: Request):\n    \"\"\"",
         "detail": "api.routers.telegram",
         "documentation": {}
     },
