@@ -27,9 +27,19 @@ class TelegramMessage(BaseModel):
     text: Optional[str] = None
     entities: Optional[List[MessageEntity]] = None
 
+class CallbackQuery(BaseModel):
+    id: str
+    from_user: TelegramUser = Field(alias="from")
+    message: Optional[TelegramMessage] = None
+    inline_message_id: Optional[str] = None
+    chat_instance: Optional[str] = None
+    data: Optional[str] = None
+    game_short_name: Optional[str] = None
+
 class TelegramUpdate(BaseModel):
     update_id: int
     message: Optional[TelegramMessage] = None
+    callback_query: Optional[CallbackQuery] = None
 
 class FinancialRecord(BaseModel):
     amount: float
