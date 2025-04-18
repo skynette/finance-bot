@@ -8,9 +8,16 @@ import django
 django.setup()
 
 # Now import your routers
-from api.routers import telegram, finance
+# from api.routers import finance
+from api.routers import telegram
+from api.routers.telegram import lifespan
 
-app = FastAPI()
+app = FastAPI(
+    title="Finance Bot API",
+    description="API for the Finance Bot Telegram application",
+    version="1.1.0",
+    lifespan=lifespan
+)
 
 # CORS Middleware
 app.add_middleware(
@@ -22,5 +29,5 @@ app.add_middleware(
 )
 
 # Include routers
-app.include_router(telegram.router)
+app.include_router(telegram.router, prefix="/api", tags=["telegram"])
 # app.include_router(finance.router)
